@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>From Now On — Life, Wellbeing & Possibility Around Lake Atitlán</title>
+<meta name="description" content="From Now On is Katherine Bird’s invitation to explore life, wellbeing, possibility, and selected places around Lake Atitlán, Guatemala.">
+<meta name="theme-color" content="#38677A">
+<style>
+:root{--white:#FBF9F5;--paper:#F4F0E8;--ink:#25312F;--muted:#5D6B68;--blue:#38677A;--teal:#5FA8A0;--green:#6E7F5C;--line:#E3DCD0;--r:20px;--max:1120px;--section:72px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--white);color:var(--ink);font:400 17px/1.68 Georgia,'Times New Roman',serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.sans{font-family:'Helvetica Neue',Arial,sans-serif;line-height:1.18;margin:0 0 .55em;letter-spacing:-.015em}
+h1{font-size:clamp(2.1rem,5.2vw,3.7rem);font-weight:300}h2{font-size:clamp(1.7rem,3.2vw,2.4rem);font-weight:300}h3{font-size:1.2rem;font-weight:600}
+p{margin:0 0 1.05em}a{color:var(--blue)}img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+section{padding:var(--section) 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'Helvetica Neue',Arial,sans-serif;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green);margin:0 0 12px}
+.lead{font-size:1.1rem;color:var(--muted);max-width:640px}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;background:var(--blue);color:#fff;text-decoration:none;font-family:'Helvetica Neue',Arial,sans-serif;font-size:.94rem;border:1px solid var(--blue);transition:.18s}
+.btn:hover{background:#2b5261}.btn.ghost{background:transparent;color:var(--blue)}.btn.ghost:hover{background:#EDF3F2}
+.btn.small{padding:10px 17px;font-size:.85rem}
+header{position:sticky;top:0;z-index:60;background:rgba(251,249,245,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;max-width:var(--max);margin:0 auto;padding:12px 20px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink)}
+.logo-mark{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--blue));display:grid;place-items:center;color:#fff;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:600;font-size:.8rem}
+.logo-text{font-family:'Helvetica Neue',Arial,sans-serif;font-weight:600;font-size:1rem;letter-spacing:.02em}
+.logo-text small{display:block;font-weight:400;color:var(--muted);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase}
+.menu{display:flex;gap:20px;list-style:none;margin:0;padding:0;font-family:'Helvetica Neue',Arial,sans-serif;font-size:.92rem}
+.menu a{text-decoration:none;color:var(--muted);padding:6px 0}.menu a:hover{color:var(--ink)}
+.navtoggle{display:none;border:0;background:none;font-size:1.5rem;color:var(--ink);cursor:pointer;padding:6px 8px}
+.hero{position:relative;padding:0;border-top:0;color:#fff}
+.hero-media{position:absolute;inset:0;background:repeating-linear-gradient(45deg,#3E5D66,#3E5D66 16px,#466A73 16px,#466A73 32px)}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,31,35,.52),rgba(18,31,35,.78))}
+.hero-inner{position:relative;max-width:var(--max);margin:0 auto;padding:100px 20px 84px}
+.hero h1{max-width:740px;text-shadow:0 2px 22px rgba(0,0,0,.24)}
+.hero .intro{max-width:600px;font-size:1.1rem;color:#EDEAE2}
+.hero .placeholder-note{position:absolute;right:20px;bottom:16px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:.7rem;color:rgba(255,255,255,.78);background:rgba(0,0,0,.3);padding:6px 11px;border-radius:999px}
+.paths{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+.path{background:rgba(251,249,245,.95);color:var(--ink);border-radius:var(--r);padding:20px;text-decoration:none;display:block;transition:.18s;border:1px solid rgba(255,255,255,.35)}
+.path:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(0,0,0,.14)}
+.path h3{margin:0 0 5px;font-size:1.02rem}.path p{margin:0;color:var(--muted);font-size:.89rem;line-height:1.5}
+.path span{display:inline-block;margin-top:10px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:.79rem;color:var(--blue)}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.placeholder{background:repeating-linear-gradient(45deg,#EFEAE0,#EFEAE0 14px,#F7F3EB 14px,#F7F3EB 28px);border:1px dashed #C8BFAE;border-radius:var(--r);display:grid;place-items:center;text-align:center;color:#77705F;font-family:'Helvetica Neue',Arial,sans-serif;font-size:.82rem;padding:24px;min-height:250px}
+.cards{display:grid;gap:20px}.cards.three{grid-template-columns:repeat(3,1fr)}.cards.two{grid-template-columns:repeat(2,1fr)}
+.card,.product,.property{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.card-body,.product-body,.property-body{padding:22px;display:flex;flex-direction:column;gap:9px;flex:1}
+.card p,.product p,.property p{color:var(--muted);font-size:.95rem}
+.tag{font-family:'Helvetica Neue',Arial,sans-serif;font-size:.69rem;letter-spacing:.15em;text-transform:uppercase;color:var(--teal)}
+.card .placeholder,.product .placeholder{border:0;border-radius:0;min-height:180px}
+.bundle{background:var(--paper);border-radius:26px;padding:38px;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.bundle .placeholder{min-height:330px}
+.bundle-steps{display:grid;gap:11px;margin:20px 0 22px}
+.bundle-steps div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 16px}
+.bundle-steps strong{display:block;font-family:'Helvetica Neue',Arial,sans-serif;font-size:.94rem;margin-bottom:2px}
+.bundle-steps span{color:var(--muted);font-size:.93rem}
+.compare{display:grid;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;margin-top:24px}
+.compare-head,.compare-row{display:grid;grid-template-columns:1.05fr 1.15fr 1.45fr .85fr;gap:16px;padding:17px;border-bottom:1px solid var(--line);align-items:center}
+.compare-head{background:var(--paper);font-family:'Helvetica Neue',Arial,sans-serif;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.compare-row:last-child{border-bottom:0}
+.featured-row{background:#F7F4ED;border-left:4px solid var(--teal)}
+.compare .small{font-size:.79rem;color:var(--muted)}
+.editorial{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.article-list{display:grid;gap:12px;margin:20px 0 24px}
+.article-link{display:flex;justify-content:space-between;gap:16px;padding:15px 17px;background:#fff;border:1px solid var(--line);border-radius:14px;text-decoration:none;color:var(--ink)}
+.article-link:hover{border-color:var(--teal)}
+.article-link strong{font-family:'Helvetica Neue',Arial,sans-serif;font-weight:600;font-size:.96rem}
+.article-link span{color:var(--muted);font-size:.84rem;white-space:nowrap}
+.meta{display:flex;flex-wrap:wrap;gap:7px;margin:7px 0 11px}
+.meta span{background:#F1EDE4;border-radius:999px;padding:5px 11px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:.74rem;color:var(--muted)}
+.note{font-size:.87rem;color:var(--muted);background:#F6F2EA;border-radius:14px;padding:15px 17px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+form{display:grid;gap:12px;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px}
+label{font-family:'Helvetica Neue',Arial,sans-serif;font-size:.81rem;color:var(--muted)}
+input,textarea,select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--white);font:inherit;color:var(--ink)}
+footer{background:#242F2D;color:#D8D3C8;padding:48px 0}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:32px}
+footer a{color:#BFD8D4;text-decoration:none}footer a:hover{text-decoration:underline}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:7px;font-size:.91rem}
+.small{font-size:.84rem;color:#A8B2AD}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:920px){.paths{grid-template-columns:repeat(2,1fr)}.cards.three,.cards.two,.feature,.bundle,.editorial,.contact-grid,.footer-grid{grid-template-columns:1fr}.hero-inner{padding:78px 20px 68px}:root{--section:58px}}
+@media(max-width:860px){.compare-head{display:none}.compare-row{grid-template-columns:1fr;gap:7px;padding:18px}.compare-row [role="cell"]:nth-child(2)::before{content:"Best for: ";font-family:'Helvetica Neue',Arial,sans-serif;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}.compare-row [role="cell"]:nth-child(3)::before{content:"How it helps: ";font-family:'Helvetica Neue',Arial,sans-serif;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}.compare-row [role="cell"]:nth-child(4)::before{content:"Next step: ";display:block;font-family:'Helvetica Neue',Arial,sans-serif;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-bottom:5px}}
+@media(max-width:600px){body{font-size:16.5px}section{padding:48px 0}.paths,.cards.three{grid-template-columns:1fr}.menu{position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--white);border-bottom:1px solid var(--line);display:none;padding:4px 20px 12px}.menu.open{display:flex}.menu li{border-top:1px solid var(--line)}.menu li:first-child{border-top:0}.menu a{display:block;padding:12px 0}.navtoggle{display:block}.bundle{padding:24px}.hero .placeholder-note{display:none}.btn{width:100%;text-align:center}.btn.small{width:auto}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to main content</a>
+
+<header><nav class="nav" aria-label="Main navigation"><a class="logo" href="#home"><span class="logo-mark" aria-hidden="true">F</span><span class="logo-text">From Now On<small>Lake Atitlán · Guatemala</small></span></a><button class="navtoggle" aria-label="Open navigation" aria-expanded="false" aria-controls="menu" onclick="const m=document.getElementById('menu');m.classList.toggle('open');this.setAttribute('aria-expanded',m.classList.contains('open'))">☰</button><ul class="menu" id="menu"><li><a href="#lake-life">Lake Life</a></li><li><a href="#wellness">Wellness</a></li><li><a href="#possibility">Possibility</a></li><li><a href="#property">Property</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></nav></header>
+
+<main id="main">
+<section class="hero" id="home"><div class="hero-media" role="img" aria-label="Placeholder for a wide photograph of Lake Atitlán, its volcanoes, or a lakeside village"></div><div class="hero-inner"><p class="eyebrow" style="color:#BFD8D4">An invitation from Katherine Bird</p><h1>From Now On<br>Life, wellbeing and possibility around Lake Atitlán — and wherever life takes you next.</h1><p class="intro">Welcome. Explore the villages, landscapes and rhythms of Lake Atitlán; find practical tools for everyday life; and consider what might be possible from here.</p><p><a class="btn" href="#lake-life">Explore Life at the Lake</a></p><div class="paths"><a class="path" href="#lake-life"><h3>Lake Life</h3><p>Villages, nature, culture, community and practical life around the lake.</p><span>Explore →</span></a><a class="path" href="#wellness"><h3>Wellness</h3><p>Practical tools for grounding, reflection and everyday life.</p><span>Explore →</span></a><a class="path" href="#possibility"><h3>Possibility</h3><p>New chapters, creativity, meaningful projects and what comes next.</p><span>Explore →</span></a><a class="path" href="#property"><h3>Property</h3><p>A curated introduction to selected homes, land and retreat spaces.</p><span>Explore →</span></a></div></div><span class="placeholder-note">Replace with a wide Lake Atitlán photograph</span></section>
+
+<section id="lake-life"><div class="wrap feature"><div><p class="eyebrow">Lake Life</p><h2>Discover life around Lake Atitlán</h2><p class="lead">Lake Atitlán is more than a destination. It is a collection of villages, families, markets, trails, gardens, changing weather, and everyday routines shaped by the lake and the volcanoes.</p><p>Here you will find observations and practical information about life in the area—its culture and communities, its natural beauty, and what it can feel like to spend time here or make a home.</p><p><a class="btn ghost" href="#lake-life-journal">Read Lake Life Notes</a></p></div><div class="placeholder" role="img" aria-label="Placeholder for a photograph of Lake Atitlán, a village, market, trail, or garden">Image placeholder:<br>Lake, village, market, trail, or garden</div></div></section>
+
+<section id="wellness" style="background:var(--paper)"><div class="wrap feature"><div class="placeholder" role="img" aria-label="Placeholder for a calm photograph of a notebook, morning light, plants, or a quiet lakeside moment">Image placeholder:<br>Notebook, morning light, plants, or quiet lakeside moment</div><div><p class="eyebrow">Wellness</p><h2>Practical tools for feeling more grounded</h2><p class="lead">Wellbeing does not have to be dramatic or complicated. Sometimes it begins with a pause, a little clarity, and one manageable next step.</p><p>From Now On shares practical digital resources for grounding, reflection, self-awareness, and navigating everyday life—useful whether you are at the lake or wherever you are today.</p><p><a class="btn ghost" href="#digital-products">Explore the Digital Guides</a></p></div></div></section>
+
+<section id="possibility"><div class="wrap feature"><div><p class="eyebrow">Possibility</p><h2>Consider what might come next</h2><p class="lead">A new chapter often begins quietly: a question, a move, a creative idea, a project, or the wish to live differently.</p><p>Possibility is a space for exploring those beginnings—personal change, creativity, meaningful projects, retreats, and finding a direction that feels honest and sustainable.</p><p><a class="btn ghost" href="#contact">Find Your Next Step</a></p></div><div class="placeholder" role="img" aria-label="Placeholder for a photograph of a path, open door, sunrise, workspace, or retreat setting">Image placeholder:<br>Path, open door, sunrise, workspace, or retreat setting</div></div></section>
+
+<section id="property" style="background:var(--paper)"><div class="wrap feature"><div class="placeholder" role="img" aria-label="Placeholder for a photograph of a home, land, garden, view, or retreat space around Lake Atitlán">Image placeholder:<br>Home, land, garden, view, or retreat space</div><div><p class="eyebrow">Property</p><h2>Selected places around the lake</h2><p class="lead">For people drawn to life at Lake Atitlán, property can be the beginning of a home, a creative project, a retreat space, or a longer relationship with this place.</p><p>This is a curated introduction to selected homes, land, retreat spaces, and properties—presented clearly, with room to ask questions before taking anything further.</p><p><a class="btn ghost" href="#selected-properties">Explore Selected Properties</a></p></div></div></section>
+
+<section id="digital-products">
+  <div class="wrap">
+    <p class="eyebrow">From Now On Resources</p>
+    <h2>A connected collection for grounding, clarity and intention</h2>
+    <p class="lead">These resources are practical companions for navigating life: ways to steady yourself, reconnect with what matters, and move forward with greater intention.</p>
+
+    <div class="bundle" style="margin-top:32px">
+      <div>
+        <p class="eyebrow">Main Offering</p>
+        <h2>The Life Alignment Bundle</h2>
+        <p class="lead" style="max-width:540px">A three-part journey for when you want to feel more grounded, reconnect with what matters, and move forward with greater intention.</p>
+        <div class="bundle-steps">
+          <div><strong>1. Ground</strong><span>The Grounded Reset helps you steady yourself when life feels overwhelming.</span></div>
+          <div><strong>2. Reconnect</strong><span>Focus Faith Fire helps you reconnect with what matters and take one small step each day.</span></div>
+          <div><strong>3. Align</strong><span>Align & Awaken complements reflection and personal growth with affirmations and a digital experience.</span></div>
+        </div>
+        <p><a class="btn" href="#ADD-LIFE-ALIGNMENT-BUNDLE-LINK">Discover the Life Alignment Bundle</a></p>
+        <p class="small" style="margin:0">Each resource is also available individually.</p>
+      </div>
+      <div class="placeholder" role="img" aria-label="Placeholder for the Life Alignment Bundle cover showing The Grounded Reset, Focus Faith Fire, and Align & Awaken">Bundle cover placeholder:<br>The Grounded Reset · Focus Faith Fire · Align & Awaken</div>
+    </div>
+
+    <div style="margin-top:48px">
+      <p class="eyebrow">Choose Your Starting Point</p>
+      <h2>What each resource is for</h2>
+      <p class="lead">Begin with the bundle, or start with the resource that best meets where you are today.</p>
+      <div class="compare" role="table" aria-label="Comparison of From Now On digital resources">
+        <div class="compare-head" role="row"><div role="columnheader">Resource</div><div role="columnheader">Best for</div><div role="columnheader">How it helps</div><div role="columnheader">Next step</div></div>
+        <div class="compare-row" role="row"><div role="cell"><strong>The Grounded Reset</strong><br><span class="small">Digital guide</span></div><div role="cell">Times when life feels overwhelming and you need practical ways to steady yourself.</div><div role="cell">Offers exercises and tools to help you feel steadier and reconnect with yourself.</div><div role="cell"><a class="btn small ghost" href="#ADD-GROUNDED-RESET-LINK">Get the Guide</a></div></div>
+        <div class="compare-row" role="row"><div role="cell"><strong>Focus Faith Fire</strong><br><span class="small">Digital experience</span></div><div role="cell">When you want clarity, direction, and a way to move forward with intention.</div><div role="cell">A personal retreat, foundation exercises, and a 30-day journal to reconnect with what matters and take one small step each day.</div><div role="cell"><a class="btn small ghost" href="#ADD-FOCUS-FAITH-FIRE-LINK">Explore Focus Faith Fire</a></div></div>
+        <div class="compare-row" role="row"><div role="cell"><strong>Align & Awaken</strong><br><span class="small">Printable cards + digital experience</span></div><div role="cell">When you want a simple companion for reflection and personal growth.</div><div role="cell">Printable affirmation cards and a digital experience to complement reflection and personal growth.</div><div role="cell"><a class="btn small ghost" href="https://sanmholisticcottage.com/store/p2/Align_%26_Awaken%3A_Printable_Affirmation_Cards_for_Women.html">View the Cards</a></div></div>
+        <div class="compare-row featured-row" role="row"><div role="cell"><strong>The Life Alignment Bundle</strong><br><span class="small">All three resources</span></div><div role="cell">When you want a complete pathway from feeling grounded to moving forward with intention.</div><div role="cell">The Grounded Reset provides the foundation, Focus Faith Fire supports clarity and purposeful action, and Align & Awaken complements the process with affirmations.</div><div role="cell"><a class="btn small" href="#ADD-LIFE-ALIGNMENT-BUNDLE-LINK">Discover the Bundle</a></div></div>
+      </div>
+    </div>
+
+    <div class="cards three" style="margin-top:44px">
+      <article class="product"><div class="placeholder" role="img" aria-label="Placeholder for The Grounded Reset product cover">Product cover placeholder:<br>The Grounded Reset</div><div class="product-body"><p class="tag">Start with grounding</p><h3>The Grounded Reset</h3><p>For times when life feels overwhelming and you need practical ways to steady yourself.</p><p style="margin-top:auto"><a class="btn small ghost" href="#ADD-GROUNDED-RESET-LINK">Get the Guide</a></p></div></article>
+      <article class="product"><div class="placeholder" role="img" aria-label="Placeholder for the Focus Faith Fire product cover">Product cover placeholder:<br>Focus Faith Fire</div><div class="product-body"><p class="tag">Start with clarity</p><h3>Focus Faith Fire</h3><p>A personal retreat, foundation exercises, and a 30-day journal to reconnect with what matters and take one small step each day.</p><p style="margin-top:auto"><a class="btn small ghost" href="#ADD-FOCUS-FAITH-FIRE-LINK">Explore Focus Faith Fire</a></p></div></article>
+      <article class="product"><div class="placeholder" role="img" aria-label="Placeholder for the Align and Awaken affirmation card cover">Product cover placeholder:<br>Align & Awaken</div><div class="product-body"><p class="tag">Start with reflection</p><h3>Align & Awaken</h3><p>Printable affirmation cards and a digital experience to complement reflection and personal growth.</p><p style="margin-top:auto"><a class="btn small ghost" href="https://sanmholisticcottage.com/store/p2/Align_%26_Awaken%3A_Printable_Affirmation_Cards_for_Women.html">View the Cards</a></p></div></article>
+    </div>
+    <p class="small" style="margin-top:16px">You can also experience Align & Awaken online: <a href="https://align-and-awaken.lovable.app/">Open the digital experience</a>.</p>
+  </div>
+</section>
+
+<section id="lake-life-journal" style="background:var(--paper)"><div class="wrap editorial"><div><p class="eyebrow">Lake Life Journal</p><h2>Notes from around the lake</h2><p class="lead">A growing collection of articles, village guides, practical information, and personal observations about life around Lake Atitlán.</p><div class="article-list"><a class="article-link" href="#ADD-ARTICLE-LINK"><strong>[Article title: village guide, seasonal note, or practical living topic]</strong><span>Read →</span></a><a class="article-link" href="#ADD-ARTICLE-LINK"><strong>[Article title: nature, culture, community, or everyday life]</strong><span>Read →</span></a><a class="article-link" href="#ADD-ARTICLE-LINK"><strong>[Article title: visiting, settling in, or exploring the area]</strong><span>Read →</span></a></div><p><a class="btn ghost" href="#contact">Ask a Question About the Lake</a></p></div><div class="placeholder" role="img" aria-label="Placeholder for an editorial photograph of village life, a market, lake view, plants, or daily life">Editorial image placeholder:<br>Village life, market, lake view, or plants</div></div></section>
+
+<section id="selected-properties"><div class="wrap"><p class="eyebrow">Property Opportunities</p><h2>Selected properties and places</h2><p class="lead">A curated introduction to selected opportunities for living, creating, investing, or establishing a thoughtful project around Lake Atitlán.</p><div class="cards two" style="margin-top:30px"><article class="property"><div class="placeholder" role="img" aria-label="Placeholder for a property photograph" style="border:0;border-radius:0;min-height:230px">Property photograph placeholder</div><div class="property-body"><p class="tag">Selected Opportunity</p><h3>[Property Name]</h3><div class="meta"><span>[Village / Area]</span><span>[Price or Price on Request]</span><span>[Key feature]</span></div><p>[Short factual introduction. Describe the setting, character, and general suitability. Avoid legal, investment, rental-income, appreciation, or development claims.]</p><p style="margin-top:auto"><a class="btn small" href="#contact">Ask About This Property</a></p></div></article><article class="property"><div class="placeholder" role="img" aria-label="Placeholder for a second property photograph" style="border:0;border-radius:0;min-height:230px">Property photograph placeholder</div><div class="property-body"><p class="tag">Selected Opportunity</p><h3>[Property Name]</h3><div class="meta"><span>[Village / Area]</span><span>[Price or Price on Request]</span><span>[Key feature]</span></div><p>[Short factual introduction. Duplicate this card for each current opportunity.]</p><p style="margin-top:auto"><a class="btn small" href="#contact">Ask About This Property</a></p></div></article></div><p class="note" style="margin-top:22px"><strong>Please note:</strong> Property information is introductory and should be independently verified with the property owner and appropriate local professionals. Katherine introduces interested people to property opportunities and their owners; she is not a law firm or a licensed real-estate agency.</p><p style="margin-top:16px"><a class="btn ghost" href="#contact">Explore All Current Opportunities</a></p></div></section>
+
+<section id="about"><div class="wrap feature"><div class="placeholder" role="img" aria-label="Placeholder for a portrait photograph of Katherine Bird" style="min-height:380px">Portrait placeholder:<br>Katherine Bird</div><div><p class="eyebrow">About Katherine</p><h2>Twenty-five years of life in Guatemala</h2><p>My name is Katherine Bird. I have lived in San Marcos La Laguna, Guatemala, since 2001. I arrived without knowing exactly what I would find, and life here became a defining part of my journey.</p><p>Over the years, I have developed a deep appreciation for the people, landscapes, culture, slower rhythms, and possibilities of life around Lake Atitlán. I have also spent many years working in holistic practices and exploring practical ways to reconnect with ourselves and what matters.</p><p>From Now On brings these interests together: the places we inhabit, the ways we care for ourselves, the ideas we explore, and the possibilities we create.</p><p><a class="btn ghost" href="#contact">Get in Touch</a></p></div></div></section>
+
+<section id="contact" style="background:var(--paper)"><div class="wrap contact-grid"><div><p class="eyebrow">Stay Connected</p><h2>Get in touch</h2><p class="lead">If you have a question about life at the lake, a digital guide, a future project, or a property introduction, I would be glad to hear from you.</p><p class="small">You can also join the From Now On list for occasional notes from the lake, new resources, and selected property opportunities.</p><p class="small"><strong>Email placeholder:</strong> [Add your email address]<br><strong>WhatsApp placeholder:</strong> [Add your WhatsApp number or link]<br><strong>Instagram placeholder:</strong> [Add your Instagram profile link]</p></div><form aria-label="Contact form" onsubmit="event.preventDefault(); alert('Thank you. This form is a placeholder. Connect it to a free form service or replace it with your email link.');"><div><label for="name">Name</label><input id="name" name="name" autocomplete="name" required placeholder="Your name"></div><div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div><div><label for="interest">I’m interested in</label><select id="interest" name="interest"><option>Lake Life</option><option>Digital guides and wellness</option><option>A future project or retreat</option><option>Property opportunities</option><option>Something else</option></select></div><div><label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="How can I help?"></textarea></div><button class="btn" type="submit">Send Message</button><p class="small" style="margin:0">This contact form is not yet connected. Replace it with a free embedded form when ready.</p></form></div></section>
+</main>
+
+<footer><div class="wrap footer-grid"><div><p class="logo-text" style="color:#fff">From Now On</p><p class="small">Life, wellbeing and possibility around Lake Atitlán — and wherever life takes you next.</p></div><div><p class="small" style="margin-bottom:9px"><strong style="color:#fff">Explore</strong></p><ul><li><a href="#lake-life">Lake Life</a></li><li><a href="#wellness">Wellness</a></li><li><a href="#possibility">Possibility</a></li><li><a href="#property">Property</a></li></ul></div><div><p class="small" style="margin-bottom:9px"><strong style="color:#fff">Connect</strong></p><ul><li><a href="#contact">Contact</a></li><li><a href="#about">About Katherine</a></li><li><a href="#ADD-INSTAGRAM-LINK">Instagram</a></li><li><a href="#ADD-EMAIL-LINK">Email</a></li></ul></div></div><div class="wrap small" style="margin-top:30px;border-top:1px solid rgba(255,255,255,.14);padding-top:18px">© <span id="year"></span> From Now On · Katherine Bird · San Marcos La Laguna, Guatemala</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>{document.getElementById('menu').classList.remove('open');document.querySelector('.navtoggle').setAttribute('aria-expanded','false')}));</script>
+</body>
+</html>
